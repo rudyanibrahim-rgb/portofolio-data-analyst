@@ -1,11 +1,16 @@
 
 # Cost - revenue Analysis periode 2024
 
-Proyek ini berusaha menganalisis data transaksi retail untuk menemukan tren penjualan dan wilayah dengan profitabilitas terendah menggunakan SQL dan Looker Studio.
+Proyek ini berusaha menganalisis data transaksi retail untuk menemukan tren penjualan dan wilayah dengan profitabilitas terendah menggunakan Python, SQL dan Looker Studio.
+
+analisis berbentuk exploratory analysis yang diaplikasikan di setiap kategori untuk menemukan strong-weaknes spot di setiap kategori, lalu dilanjutkan dengan membedah data dengan granularitas lebih lanjut untuk lebih memetakan Point of Occurance dari permasalahannya  
+
 
 # Live Interactive Dashboard
 https://datastudio.google.com/reporting/2dcca930-3309-4e00-b079-85f1278162c7
 
+# Python code analysis :
+https://nbviewer.org/github/rudyanibrahim-rgb/portofolio-data-analyst/blob/main/Python%20Analysis.ipynb
 
 # Preview Dashboard
 <img width="1200" height="782" alt="image" src="https://github.com/user-attachments/assets/dfe5e4d1-d3ad-4fcc-bef9-a7ff6a02f80d" />
