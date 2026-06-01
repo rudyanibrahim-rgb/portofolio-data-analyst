@@ -38,10 +38,7 @@ https://colab.research.google.com/drive/19u531o6mT7cvRKiBARjPaqGwen_ARbA2?usp=sh
 https://datastudio.google.com/reporting/2dcca930-3309-4e00-b079-85f1278162c7
 
 ## Preview Dashboard
-<img width="1004" height="740" alt="image" src="https://github.com/user-attachments/assets/18263b48-9524-44f3-b2af-9f31c991c0b7" />
-
-
-
+<img width="993" height="731" alt="image" src="https://github.com/user-attachments/assets/d7af7507-7bfc-42b7-a12d-b91b0dc4480a" />
 
 ## Key Insights (Temuan Utama)
 * **Insight 1:** Terdapat pertumbuhan aggregat yang sehat dimana kenaikan volume penjualan (+16,9% Quantity) selaras dengan laju pertumbuhan pendapatan (+25,0% Revenue) dan berhasil menekan kenaikan biaya pengadaan (7.3%) dibawah laju pertumbuhan pendapatan, hal ini menunjukkan juga perusahaan berhasil menciptakan pertumbuhan yang efisien dimana pertumbuhan revenue lebih tinggi daripada pertumbuhan kuantitas penjualan ini menunjukkan efektifitas pertumbuhan volume penjualan dalam meningkatkan revenue perusahaan, rasio margin terhadap pendapatan juga meningkat 8% hal ini menunjukkan peningkatan efisiensi pengadaan barang oleh perusahaan.
