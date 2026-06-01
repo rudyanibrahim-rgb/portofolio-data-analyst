@@ -26,7 +26,7 @@ Proses ini adalah proses SQL heavy dan menggunakan sedikit kode python, pembersi
    <img width="628" height="145" alt="image" src="https://github.com/user-attachments/assets/82a3708b-20e9-46b5-92b6-a5a833533546" />
 setelah query diatas dijalankan semua kolom yang kosong tersebut memiliki null values lebih dari 50% (56%) hal ini menyebabkan ketidak akuratan analisis jika kolom kolom tersebut digunakan, maka dari sini kolom tersebut tidak digunakan untuk analisis lebih lanjut
 
-3. Analisa exploratory analisis 
+3. **Exploratory Data Analysis** 
 analisa dilakukan setelah data bersih untuk mencari tahu performa bisnis, sebelumnya analisa deskriptif terhadap kategori dilakukan di python dengan memperhatikan standar pemusatan data yang bisa dilihat di link google colab di bagian berikutnya
 <img width="635" height="335" alt="image" src="https://github.com/user-attachments/assets/fb338d2a-3898-454e-ae46-e5c9f2cb2d7f" />
 
@@ -38,13 +38,14 @@ https://colab.research.google.com/drive/19u531o6mT7cvRKiBARjPaqGwen_ARbA2?usp=sh
 https://datastudio.google.com/reporting/2dcca930-3309-4e00-b079-85f1278162c7
 
 ## Preview Dashboard
-<img width="1200" height="782" alt="image" src="https://github.com/user-attachments/assets/dfe5e4d1-d3ad-4fcc-bef9-a7ff6a02f80d" />
+<img width="1004" height="740" alt="image" src="https://github.com/user-attachments/assets/18263b48-9524-44f3-b2af-9f31c991c0b7" />
+
 
 
 
 ## Key Insights (Temuan Utama)
-* **Insight 1:** Terdapat pertumbuhan aggregat yang sehat dimana kenaikan volume penjualan (+16,9% Quantity) selaras dengan laju pertumbuhan pendapatan (+25,0% Revenue), hal ini menunjukkan juga perusahaan berhasil menciptakan pertumbuhan yang efisien dimana pertumbuhan revenue lebih tinggi daripada pertumbuhan kuantitas penjualan.
-* **Insight 2:** terdapat anomali pada kategori **Electronic** dan **Gaming Gear** dimana keduanya memiliki **kuantitas penjualan yang paling rendah** sedangkan **proporsi biayanya yang paling tinggi** dibandingkan dengan marginnya diantara kategori lainnya .
+* **Insight 1:** Terdapat pertumbuhan aggregat yang sehat dimana kenaikan volume penjualan (+16,9% Quantity) selaras dengan laju pertumbuhan pendapatan (+25,0% Revenue) dan berhasil menekan kenaikan biaya pengadaan (7.3%) dibawah laju pertumbuhan pendapatan, hal ini menunjukkan juga perusahaan berhasil menciptakan pertumbuhan yang efisien dimana pertumbuhan revenue lebih tinggi daripada pertumbuhan kuantitas penjualan ini menunjukkan efektifitas pertumbuhan volume penjualan dalam meningkatkan revenue perusahaan, rasio margin terhadap pendapatan juga meningkat 8% hal ini menunjukkan peningkatan efisiensi pengadaan barang oleh perusahaan.
+* **Insight 2:** terdapat anomali pada kategori **Electronic** dan **Gaming Gear** dimana keduanya memiliki **kuantitas penjualan yang paling rendah** sedangkan **proporsi biayanya yang paling tinggi** dibandingkan dengan marginnya diantara kategori lainnya, namun jika diperhatikan lebih lanjut kedua kategori ini menempati posisi **Top 2 ** .
 * **insight 3:** Game controller dan Gaming Monitor memiliki kontribusi margin terendah (34% - 37%) dibandingkan produk lainnya
 * **insight 4:** Terdapat Anomali di jajaran produk bermargin tinggi dimana kategori **Books & Stationary** memiliki **kontribusi margin tertinggi** namun dengan **kuantitas penjualan** yang **relatif rendah** dibandinngkn produk bermargin tinggi lainnya
 * **insight 5:** adanya pelemahan (downward trend) pada kategori **Books & stationary** sepanjang periode 2024 dimana **indeks kuantitas menyusut 16%** menandakan indikasi pelemahan penjualan yang kemudian berimbas di **total revenue turun 17%**, dan **penyusutan margin 2.4%**. terjadi juga **lonjakan indeks COGS sebesar 5,1%** dimana ini menandakan indikasi inefisiensi operasional, perhatian diperlukan untuk kategori ini karena ini menandakan potensi yang belum digapai
