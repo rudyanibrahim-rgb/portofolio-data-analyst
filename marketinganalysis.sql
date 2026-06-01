@@ -11,16 +11,30 @@ select
   round((count(case when status is null then 1 end)/count(*))*100,2) as Appstore_perc,
   round((count(case when event is null then 1 end)/count(*))*100,2) as event_perc
 from `Latihan.Full_data`; --beberapa kolom memiliki null values 56% ini adlaah jumlah signifikan untuk null values perlu manipulasi data maka kita tidak menggunakan kolom ini menjadi dasar analisis
-
+-- kolom channel source tidak kredibel untuk dianalisis sehingga kita berpindah menggunakan kolom channel type
 select * from `Latihan.full_data_cleaned`; --data setelah dimanipulasi di python untuk memudahkan analisa lebih lanjut
 
--- kolom channel source tidak kredibel untuk dianalisis sehingga kita berpindah menggunakan kolom channel type
+--Analisa statistik deskriptif
+select
+  category,
+  round(avg(after_discount),2) as avg_revenue,
+  round(avg(((after_discount - cogs)/after_discount)*100),2) as `avg_%margin`,
+  max(after_discount) as max_revenue,
+  max(round(((after_discount - cogs)/after_discount)*100,2)) as `max%margin`,
+  min(after_discount) as min_revenue,
+  min(round(((after_discount - cogs)/after_discount)*100,2)) as `min%margin`,
+  round(avg(cogs),2) as avg_cogs,
+  round(avg((cogs/after_discount)*100),2) as `avg_%cogs`,
+  max(cogs) as max_cogs,
+  max(round((cogs/after_discount)*100,2)) as `max%cogs`,
+  min(cogs) as min_cogs,
+  min(round((cogs/after_discount)*100,2)) as `min%cogs`
+from `Latihan.full_data_cleaned`
+where is_net = 1
+group by 1
+
 
 -- analisa funnel dan performa marketing
-select 
-  count(case when status is null then 1 else null end)/count(*) as null_percentage
-from `Latihan.full_data_cleaned`; -- null values menguasai 56% dari	 data di status sehingga 
-
 with f as (
   select 
     count(case when status = 'Click' then 1 end) as c,
