@@ -15,8 +15,12 @@ analisis berbentuk exploratory analysis yang diaplikasikan di setiap kategori un
 ## Tahapan tahapan kerja analisa :
 ### Data extraction 
 Proses ini menggunakan query SQL dengan melakukan operasi **"LEFT JOIN"** dengan "order_detail" sebagai data dasar dan data data lainnya  sebaghai data pelengkap, tak lupa menambahkan baris khusus operasi window function row_number untuk kebutuhan data cleaning selanjutnya
+
+<img width="1091" height="685" alt="image" src="https://github.com/user-attachments/assets/44c078cb-a061-41f9-be8e-f26332a4ec99" />
+
 ### Data Cleaning 
-Proses ini adalah proses SQL heavy dan menggunakan sedikit kode python, pembersihan data mencakup pengecekan null values dan pendeteksian nilai duplikat, pendeteksian null values menggunakan query 
+Proses ini adalah proses SQL heavy dan menggunakan sedikit kode python, pembersihan data mencakup pengecekan null values dan pendeteksian nilai duplikat, pendeteksian null values menggunakan query SQL  
+1. **pengecekan duplicate values** : dilakukan dengan menjalankan query mencari baris yang memiliki nilai rn = 2 
 
 ## Live Interactive Dashboard
 https://datastudio.google.com/reporting/2dcca930-3309-4e00-b079-85f1278162c7
