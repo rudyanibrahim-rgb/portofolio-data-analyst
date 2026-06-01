@@ -16,13 +16,20 @@ analisis berbentuk exploratory analysis yang diaplikasikan di setiap kategori un
 ### Data extraction 
 Proses ini menggunakan query SQL dengan melakukan operasi **"LEFT JOIN"** dengan "order_detail" sebagai data dasar dan data data lainnya  sebaghai data pelengkap, tak lupa menambahkan baris khusus operasi window function row_number untuk kebutuhan data cleaning selanjutnya
 
-<img width="1091" height="685" alt="image" src="https://github.com/user-attachments/assets/44c078cb-a061-41f9-be8e-f26332a4ec99" />
+<img width="628" height="314" alt="image" src="https://github.com/user-attachments/assets/44c078cb-a061-41f9-be8e-f26332a4ec99" />
 
 ### Data Cleaning 
 Proses ini adalah proses SQL heavy dan menggunakan sedikit kode python, pembersihan data mencakup pengecekan null values dan pendeteksian nilai duplikat, pendeteksian null values menggunakan query SQL  
-1. **pengecekan duplicate values** : dilakukan dengan menjalankan query mencari baris yang memiliki nilai rn = 2 
+1. **pengecekan duplicate values** : dilakukan dengan menjalankan query mencari baris yang memiliki nilai rn = 2, hasil query "select * from `Latihan.full_data_cleaned` where rn > 1" menunjukkan "no result" menandakan tidak ada baris data terduplikasi dalam artian semua data unique
+2. **pengecekan null values** : secara visual terhadap beberapa data yang kosong hal ini dipastikan setelah menjalankan kode df.info() di python menunjukkan beberapa kolom kosong setelah itu saya menjalankan query seperti di gambar ini
 
-## Live Interactive Dashboard
+   <img width="628" height="145" alt="image" src="https://github.com/user-attachments/assets/82a3708b-20e9-46b5-92b6-a5a833533546" />
+setelah query diatas dijalankan semua kolom yang kosong tersebut memiliki null values lebih dari 50% (56%) hal ini menyebabkan ketidak akuratan analisis jika kolom kolom tersebut digunakan, maka dari sini kolom tersebut tidak digunakan untuk analisis lebih lanjut
+
+## Analisa Deskriptive
+
+## Live Interactive Dashboard : 
+
 https://datastudio.google.com/reporting/2dcca930-3309-4e00-b079-85f1278162c7
 
 ## Python code analysis :
