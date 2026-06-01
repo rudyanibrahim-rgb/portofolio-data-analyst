@@ -26,14 +26,16 @@ Proses ini adalah proses SQL heavy dan menggunakan sedikit kode python, pembersi
    <img width="628" height="145" alt="image" src="https://github.com/user-attachments/assets/82a3708b-20e9-46b5-92b6-a5a833533546" />
 setelah query diatas dijalankan semua kolom yang kosong tersebut memiliki null values lebih dari 50% (56%) hal ini menyebabkan ketidak akuratan analisis jika kolom kolom tersebut digunakan, maka dari sini kolom tersebut tidak digunakan untuk analisis lebih lanjut
 
-## Analisa Deskriptive
-
-## Live Interactive Dashboard : 
-
-https://datastudio.google.com/reporting/2dcca930-3309-4e00-b079-85f1278162c7
+3. Analisa exploratory analisis 
+analisa dilakukan setelah data bersih untuk mencari tahu performa bisnis, sebelumnya analisa deskriptif terhadap kategori dilakukan di python dengan memperhatikan standar pemusatan data yang bisa dilihat di link google colab di bagian berikutnya
+<img width="635" height="335" alt="image" src="https://github.com/user-attachments/assets/fb338d2a-3898-454e-ae46-e5c9f2cb2d7f" />
 
 ## Python code analysis :
-https://nbviewer.org/github/rudyanibrahim-rgb/portofolio-data-analyst/blob/main/Python%20Analysis.ipynb
+https://colab.research.google.com/drive/19u531o6mT7cvRKiBARjPaqGwen_ARbA2?usp=sharing
+
+### Live Interactive Dashboard : 
+
+https://datastudio.google.com/reporting/2dcca930-3309-4e00-b079-85f1278162c7
 
 ## Preview Dashboard
 <img width="1200" height="782" alt="image" src="https://github.com/user-attachments/assets/dfe5e4d1-d3ad-4fcc-bef9-a7ff6a02f80d" />
