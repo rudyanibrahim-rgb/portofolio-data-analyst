@@ -12,6 +12,7 @@ analisis berbentuk exploratory analysis yang diaplikasikan di setiap kategori un
 - Transaction_detail (informasi lengkap transaksi yang masuk)
 - Payment_detail (informasi lengkap pembayaran masuk)
 - Funnel_detail (informasi detail untuk tiap tingkat funnel marketing)
+link data source : <https://drive.google.com/drive/folders/1aC5JRwuEH5XVfX8PCsPoBnTCWOnfzPii?hl=ID>
 ## Tahapan tahapan kerja analisa :
 ### Data extraction 
 Proses ini menggunakan query SQL dengan melakukan operasi **"LEFT JOIN"** dengan "order_detail" sebagai data dasar dan data data lainnya  sebaghai data pelengkap, tak lupa menambahkan baris khusus operasi window function row_number untuk kebutuhan data cleaning selanjutnya
